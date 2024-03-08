@@ -17,9 +17,6 @@ import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
 
-/**
- * Covers a complete form implementation using formik and yup for validation
- */
 const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
@@ -32,7 +29,7 @@ const ContactMeSection = () => {
       comment: "",
     },
     onSubmit: (values) => {
-      submit("https://john.com/contactme", values);
+      submit("batakankarakaya@gmail.com", values);
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
@@ -55,10 +52,10 @@ const ContactMeSection = () => {
   return (
     <FullScreenSection py={16} spacing={8} 
     color="#e5e7eb">
-      <Heading as="h1" id="contactme-section">
+      <Heading as="h1" id="contactme-section" marginTop="5vh" alignSelf="center">
         Contact me
       </Heading>
-      <VStack w="1024px" p={32} alignItems="flex-start">
+      <VStack w="1024px" pl={32} pr={32} alignItems="flex-start">
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
@@ -111,7 +108,6 @@ const ContactMeSection = () => {
               </FormControl>
               <Button
                 type="submit"
-                colorScheme="purple"
                 width="full"
                 isLoading={isLoading}
               >
