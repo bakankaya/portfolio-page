@@ -5,7 +5,7 @@ import avatar from "../images/avatar.png";
 
 const greeting = "Hello, I am Atakan!";
 const bio1 = "A frontend developer";
-const bio2 = "specialized in React and UI design";
+const bio2 = "Specialized in React and UI design";
 
 const LandingSection = () => (
   <FullScreenSection color="#e5e7eb" justifyContent="center" alignItems="center">
@@ -25,7 +25,7 @@ const LandingSection = () => (
         <Heading as="h1" size="2xl" noOfLines={1}>
           {bio1}
         </Heading>
-        <Heading as="h1" size="xl" noOfLines={1}>
+        <Heading as="h1" size={["lg","xl"]} noOfLines={[2,1]} textAlign="center">
           {bio2}
         </Heading>
       </VStack>

@@ -51,11 +51,12 @@ const ContactMeSection = () => {
 
   return (
     <FullScreenSection py={16} spacing={8} 
+    alignItems="flex-start"
     color="#e5e7eb">
       <Heading as="h1" id="contactme-section" marginTop="5vh" alignSelf="center">
         Contact me
       </Heading>
-      <VStack w="1024px" pl={32} pr={32} alignItems="flex-start">
+      <VStack w={["350px","1024px"]} pl={[0,32]} pr={[0,32]} alignItems="flex-start">
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>

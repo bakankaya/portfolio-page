@@ -100,7 +100,7 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(3,minmax(0,1fr))"
+        gridTemplateColumns={["1","repeat(3,minmax(0,1fr))"]}
         gridGap={8}
       >
         {projects.slice(0, itemList).map((project) => (
