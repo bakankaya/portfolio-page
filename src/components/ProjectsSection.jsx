@@ -9,37 +9,70 @@ const projects = [
     title: "React Space",
     description:
       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-      imageSrc: img, 
-    },
-  // {
-  //   title: "React Infinite Scroll",
-  //   description:
-  //     "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-  //   getImageSrc: () => {
-  //     "../images/photo2.jpg";
-  //   },
-  // },
-  // {
-  //   title: "Photo Gallery",
-  //   description:
-  //     "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-  //   getImageSrc: () => {
-  //     "../images/photo3.jpg";
-  //   },
-  // },
-  // {
-  //   title: "Event planner",
-  //   description:
-  //     "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-  //   getImageSrc: () => {
-  //     "../images/photo4.jpg";
-  //   },
-  // },
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
+  {
+    title: "React Space",
+    description:
+      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+    imageSrc: img,
+    url: "https://github.com/rgommezz/react-native-offline",
+  },
 ];
+
+
 
 const ProjectsSection = () => {
   return (
-    <FullScreenSection p={8} alignItems="flex-start" spacing={8}>
+    <FullScreenSection
+      color="#e5e7eb"
+      p={8}
+      alignItems="flex-start"
+      spacing={8}
+    >
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
@@ -53,7 +86,7 @@ const ProjectsSection = () => {
             key={project.title}
             title={project.title}
             description={project.description}
-            url="https://github.com/rgommezz/react-native-offline"
+            url={project.url}
             imageSrc={project.imageSrc}
           />
         ))}
